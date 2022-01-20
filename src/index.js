@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import header from './img/utvt.png';
+import logo from './img/cuervi.jpeg';
+import persona from './img/persona.jpeg';
+import './css/style.css';
+import Credencial from './components/Credencial';
+
+
+const fecha='Inscrito el 13 de Enero del 2022';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Credencial matricula='222010329' header={header} logo={logo} persona={persona} nombre='Fernando Duarte Villavicencio' grupo='DSM 53' fecha='21/10/2002' texto='Esta credencial certifica que la persona mencionada es estudiante de la UTVT' inscripcion={fecha}/>,
   document.getElementById('root')
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
