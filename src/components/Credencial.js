@@ -25,6 +25,7 @@ export default Credential=(props)=>{
 
             <div class="item5">
               <p>{props.texto}</p>
+              <p>{props.texto2}</p>
             </div>
             <div class="item6">
               <p>{props.inscripcion}</p>

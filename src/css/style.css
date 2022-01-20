@@ -23,10 +23,18 @@ body{
 }
 
 .logo-img{
-    height: 150px;
-    position:absolute;
-    right: 470px;
-    bottom: 300px;
+    position: absolute;
+    top: 300px;
+    left: 800px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-areas:
+   
+    'menu main right right'
+    'menu footer footer footer'
+    'footer1 footer1 footer1 footer1';
+    
+  grid-gap: 10px;
 }
 
 .grid-info{
@@ -61,4 +69,7 @@ body{
 
 p{
     font-size: 15px;
+    text-align:auto;
+    font-display: auto;
+    text-indent:15px;
 }
